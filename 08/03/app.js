@@ -1,0 +1,2 @@
+const a = prompt("enter");
+console.log(a.replaceAll("@", ""));
