@@ -1,0 +1,13 @@
+// На вход подается число. Необходимо каждое значение возвести в степень индекса и
+// вычислить сумму. 12345 = 1
+// 0+2
+// 1+3
+// 2+4
+// 3+5
+// 4
+
+const num = prompt();
+const str = num.split("").map(Number);
+
+const res = str.reduce((sum, el, index) => sum + el ** index, 0);
+console.log(res);
