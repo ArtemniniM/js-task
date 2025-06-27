@@ -10,4 +10,3 @@ const printReversed = (str) => {
   console.log(reverseStr(str));
 };
 printReversed(str);
-1
