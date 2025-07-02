@@ -5,6 +5,6 @@
 const val = document.querySelector("button");
 
 val.addEventListener("click", () => {
-  const inpVal = document.querySelector("input");
-  inpVal.value = "+375(29)111-11-11";
+  const inp = document.querySelector("input");
+  inp.value = "+375(29)111-11-11";
 });
