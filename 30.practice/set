@@ -1,0 +1,116 @@
+; 1. Создай класс NumberFilter с методом get_numbers(), который возвращает [1, 2, 3, 4, 5, 6].
+; Создай наследника EvenFilter и метод filter_numbers(), который перебирает массив и возвращает только четные.
+; Ожидаемый результат: [2, 4, 6].
+
+; 2. Создай класс StringSource с методом get_strings(), который возвращает ["cat", "horse", "a", "apple"].
+; Создай наследника LongStringFilter с методом filter_strings(), который оставляет только строки длиной >= 4.
+; Ожидаемый результат: ["horse", "apple"].
+
+; 3. Создай класс BaseNumbers с методом get_numbers() →  возвращает массив рандомных чисел Math.random.
+; Создай наследника EvenDoubler с методом get_numbers(), который удваивает только четные числа.
+; Ожидаемый результат: [4, 8].
+
+; 4. Создай класс IntGenerator, метод getNums() возвращает [-3, 1, 4, -1].
+; Создай наследника PositiveSum и метод метод getNums(), который находит сумму положительных.
+; Ожидаемый результат: 5.
+
+; 5. Создай класс TextSource, метод get() → "education is powerful".
+; Создай наследника VowelCounter, метод get(), который возвращает количество гласных букв.
+; Ожидаемый результат: 9.
+
+; 6. Создай класс Sequence, метод get() → возвращает массив чисел сгенерированных prompt.
+; Создай наследника OddIndexSum , метод sum(), который суммирует элементы на нечетных индексах.
+; Ожидаемый результат: 7 + 5 = 12.
+
+; 7. Создай класс SentenceList, метод get() → ["my cat", "your dog", "wildcat", "mouse"].
+; Создай наследника CatFilter, метод filterData(), который возвращает строки, содержащие "cat".
+; Ожидаемый результат: ["my cat", "wildcat"].
+
+; 8. Создай класс VerbList, метод get() → ["running", "eat", "walking", "sleep"].
+; Создай наследника IngFilter, метод get(), который возвращает > 6 symbols ["running", "walking"].
+
+; 9. Создай класс PrimeGenerator, метод get(n) возвращает первые n простых чисел.
+; Пример: get(4) → [2, 3, 5, 7].
+; Создай наследника PrimeSquares, метод get(n) возвращает квадраты этих чисел.
+; Пример: get(4) → [4, 9, 25, 49].
+
+; 10. Создай класс TextCleaner, метод clean(text) удаляет знаки препинания и приводит текст к нижнему регистру.
+; Пример: "Hello, World!" → "hello world".
+; Создай наследника WordCounter, метод count_words(text) возвращает количество слов.
+; Пример: "Hello, World!" → 2.
+
+; 11. Создай класс WordExtractor, метод get_words(text) возвращает уникальные слова из текста.
+; Пример: "hi hello hi" → ["hi", "hello"].
+; Создай наследника WordLengths, метод get_words(text) возвращает список длин этих слов.
+; Пример: [2, 5].
+
+; 12. Создай класс RepeatingArray, метод get() → [1, 2, 2, 3, 2, 4].
+; Создай наследника MajorityElement, метод get() возвращает элемент, встречающийся чаще всего.
+; Пример: 2
+
+; 13. Создай класс NumberGen, метод get(n) → возвращает массив [1, 2, 3, 4, 5].
+; Создай наследника SplitEvenOdd, метод getData(n) возвращает массив из двух списков: четные и нечетные.
+; Пример: '[2, 4] [1, 3, 5]'
+
+
+
+; dz
+; 1. Создай класс DayWeather с полями day, temps (массив температур за день). Метод average() возвращает среднюю температуру в каждом дне.
+
+; Входные:
+; const weatherData = [
+;   { day: "Mon", temps: [20, 22, 25] },
+;   { day: "Tue", temps: [18, 20, 19] },
+;   { day: "Wed", temps: [25, 27, 30] },
+;   { day: "Thu", temps: [19, 21, 20] },
+;   { day: "Fri", temps: [22, 24, 23] },
+; ];
+; Выходные: 
+; [
+;   { "day": "Mon", "average": 22.33 },
+;   { "day": "Tue", "average": 19.0 },
+;   { "day": "Wed", "average": 27.33 },
+;   { "day": "Thu", "average": 20.0 },
+;   { "day": "Fri", "average": 23.0 }
+; ]
+
+
+; 2.  Создай класс DayWeather с полями day, temps (массив температур за день). Метод average() возвращает день с самой высокой температурой.
+
+; Входные:
+; const weatherData = [
+;   { day: "Mon", temps: [20, 22, 25] },
+;   { day: "Tue", temps: [18, 20, 19] },
+;   { day: "Wed", temps: [25, 27, 30] },
+;   { day: "Thu", temps: [19, 21, 20] },
+;   { day: "Fri", temps: [22, 24, 23] },
+; ];
+; Выходные: Wed (тк 30 - максимальная температура)
+
+; 3. Класс User: с полем password. Метод isSecure() возвращает true, если длина пароля ≥ 8 и есть хотя бы одна цифра. Дан массив пользователей — выведи всех с небезопасными паролями.
+; Входные:
+; const users = [
+;   { username: "admin", password: "1234" },
+;   { username: "user1", password: "mypassword1" },
+;   { username: "guest", password: "guest" },
+;   { username: "root", password: "root" },
+; ];
+; Выходные: 
+; [
+;   { username: 'admin', password: '1234' },
+;   { username: 'guest', password: 'guest' },
+;   { username: 'root', password: 'root' }
+; ]
+
+; 4. Класс Player. Дан массив игроков — выведи имя игрока с наибольшим общим счётом.
+
+; Выходные:
+; const players = [
+;   { name: "Alice", scores: [20, 20, 15] },
+;   { name: "Bob", scores: [5, 8, 12, 7] },
+;   { name: "Charlie", scores: [30, 5] },
+; ];
+; Выходные:
+; [{ name: "Alice", scores: [20, 20, 15] }] - потому что 20 + 20 + 15 - наибольшая сумма
+
+; 5. Класс Product: name, price. Наследник TaxedProduct: добавляется поле taxRate. Метод finalPrice() — у Product возвращает price, у TaxedProduct есть метод с таким же названием и возвращает price + price * taxRate.

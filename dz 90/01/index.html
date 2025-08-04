@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Мой список дел</title>
+    <style>
+      .completed {
+        text-decoration: line-through;
+        color: gray;
+      }
+      li {
+        margin: 5px 0;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <p>
-      Используя цикл for отобразите числа от 0 до 100
-    </p>
-    <script src="./app.js"></script>
+    <h1>Мои дела</h1>
+    <input type="text" id="newTodo" placeholder="Добавить дело" />
+    <button onclick="addTodo()">Добавить</button>
+    <ul id="todoList"></ul>
+
+    <script src="./app.js "></script>
   </body>
 </html>

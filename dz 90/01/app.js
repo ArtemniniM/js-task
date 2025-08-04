@@ -1,10 +1,13 @@
-/*
-Округлить число до ближайшего целого.
- Использовать: Math.round
- Примеры:
- 3.6 → 4
- 2.3 → 2
-*/
+const input = document.querySelector("#newTodo");
+const btn = document.querySelector("button");
+const ul = document.querySelector("#todoList");
 
-let a = 3.6;
-console.log(Math.round(a));
+btn.addEventListener("click", () => {
+  const li = document.createElement("li");
+  li.textContent = input.value;
+  ul.appendChild(li);
+  input.value = "";
+  li.addEventListener("dblclick", () => {
+    li.remove();
+  });
+});
