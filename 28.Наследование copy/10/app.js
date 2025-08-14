@@ -31,9 +31,8 @@ class AdvancedUserCollection extends UserCollection {
     }, {});
   }
 }
-const users = new UserCollection();
-const adUsers = new AdvancedUserCollection();
+const users = new AdvancedUserCollection();
 console.log(users.filterByCity("Минск"));
 console.log(users.averageAge());
 console.log(users.getNames());
-console.log(adUsers.groupByCity());
+console.log(users.groupByCity());
