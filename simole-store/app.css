@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+h2 {
+  font-size: 16px;
+}
+#head {
+  display: block;
+  padding: 10px 70px 10px 10px;
+}
+#text {
+  display: block;
+  padding: 10px 70px 70px 10px;
+  margin: 10px 0;
+}
+#id {
+  display: block;
+  padding: 10px;
+}
+button {
+  /* display: block; */
+  border: 1px solid #060404;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #5fa147;
+}
+#success {
+  width: 1440px;
+  padding: 10px 0;
+  background-color: #c3dfd2;
+  display: none;
+}
+h3 {
+  font-size: 16px;
+}
+#counter {
+  font-size: 16px;
+  font-family: "Inter light";
+}
+.createProduct {
+  display: none;
+}
+.createProduct.viewDisplay {
+  display: block;
+}
